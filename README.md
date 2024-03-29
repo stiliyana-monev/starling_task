@@ -1,6 +1,6 @@
 TASK 1 - DATA DISCOVERY
 
-Horces data set contains data around Races, the race cource and the horses that are taking part in a race. I as part of my initial exploration I have tried to divide the available columns into groups- Measures that relate to the Race, attributes that relate to the individual Horse and few attributes that relate to the Race Cource.
+Horses data set contains data around Races, the race cource and the horses that are taking part in a race. I as part of my initial exploration I have tried to divide the available columns into groups- Measures that relate to the Race, attributes that relate to the individual Horse and few attributes that relate to the Race Cource.
 
 Data Quality Observation:
 
