@@ -15,9 +15,16 @@ select
     {{surrogate_key(['RaceID', 'HorseID'])}} as unique_id
     , RaceID
     , HorseID 
-    , JockeyID --assuming that the Jockey might be different from race to race
-    , MeetingID
     , CourseID
+    , JockeyID --Jockey can be different from race to race
+    , RaceNumber
+    , HorseCount
+    , RaceType
+    , Runners
+    , Going 
+    , Weather 
+    , Eligibility  --I work under the assumption that the race is for horses of sertain age range
+    , Age --this is the age at date of the race
     , Cloth --appear to vary from race to race
     , Stall --appear to vary from race to race
     , Blinkers  --appear to vary from race to race
@@ -28,18 +35,9 @@ select
     , Eyecover 
     , TongueStrap 
     , CheekPieces 
-    , RaceNumber
-    , HorseCount
-    , RaceType
-    , Runners
-    , MeetingDate
+    , LastRunDaysFlat
+    , TrackType
     , Won
-    , Going 
-    , Weather 
-    , ScheduledTime 
-    , StartingPrice
-    , ForecastPrice -- I assume that is the forcased value of the horse at the time of race fpr example
-    , eligibility  --I work under the assumption that the race is for horses of sertain age range
 
 from {{ source('data', 'Horses') }}
 

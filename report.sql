@@ -46,9 +46,10 @@ group by HorseID
                         ) 
 
 select 
-    all_races.HorseID
-    , all_races.total_number_of_races
-    , won_races.total_races_won
+    all_races.HorseID                                               as horse_id
+    , all_races.total_number_of_races                               as total_number_of_races
+    , won_races.total_races_won                                     as total_races_won
+    , (won_races.total_races_won/all_races.total_number_of_races)   as win_ratio
 
 from number_of_races                all_races
 

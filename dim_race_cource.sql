@@ -13,7 +13,6 @@ with race_cource as (
 select  distinct
      CourseID
     , Course_Distance
-    , TrackType
     , StatCourse 
     , StatDistance
     , StatCourseDistance

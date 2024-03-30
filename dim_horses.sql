@@ -17,8 +17,6 @@ select  distinct
     , Bred
     , Sex 
     , Colour
-    , Age
-    , LastRunDaysFlat
 
 from {{ source('data', 'Horses') }}
 
